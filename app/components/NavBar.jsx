@@ -18,7 +18,7 @@ const NavBar = async () => {
         </li>
         {user ? (
           <li className="text-sm py-1 px-2 rounded-md hover:bg-blue-400 hover:text-white">
-            <Link href="/api/auth/logout">Logout</Link>
+            <Link prefetch={false} href="/api/auth/logout">Logout</Link>
           </li>
         ) : (
           <>
